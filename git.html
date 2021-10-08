@@ -8,24 +8,102 @@
 </head>
 <main>
 <body>
-	<div class="title">
-		<h1>Working with local repositories</h1>
-	</div>
-	<div class="maincont">
-		<div class="left">
-			<h1 id="h1"><strong> git init </strong>
-			</h1>
+    <div class='contcomp1'>
+		<div class="title">
+			<h1>Working with local repositories</h1>
 		</div>
-		<div class="right">
-			<h1>
-				This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
-				<p id="prompt">   # change directory to codebase
-							  	<br> $ cd /file/path/to/code
+		<div class="maincont">
+			<div class="left">
+				<h1 class="h1"><strong> git init </strong></h1>
+				<h1><strong> git add </strong></h1>
+				<h1><strong> git commit </strong></h1>
+				<h1><strong> git status </strong></h1>
+				<h1><strong> git config </strong></h1>
+				<h1><strong> git branch </strong></h1>
+				<h1><strong> git checkout </strong></h1>
+				<h1><strong> git merge </strong></h1>
+				
+			</div>
+			<div class="right">
+				<h1>
+					This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.
+				</h1>
+					<p class="prompt">  # change directory to codebase
+							  	<br> 	$ cd /file/path/to/code
+                                <br>
+								<br> 	# make directory a git repository
+								<br> 	$ git init
+					</p>
+				
+				<h1><br>
+					Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files. 
+				</h1>
+					<p class="prompt"> 	# To add all files not staged:
+							<br>	$ git add .
 
-								<br> # make directory a git repository
-									 $ git init
-				</p>
-			</h1>
+							<br>	# To stage a specific file:
+							<br>	$ git add index.html
+
+							<br>	# To stage an entire directory:
+							<br>	$ git add css
+							  	
+					</p>
+				<h1><br><br>
+					Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID. 
+				</h1>
+					<p class="prompt"> 	# Adding a commit with message
+							<br>	$ git commit -m "Commit message in quotes"
+							<br><br><br>
+							  	
+					</p>
+				<h1><br><br>
+					This command returns the current state of the repository.
+					git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.
+				</h1>
+					<p class="prompt"> 	$ git status
+							<br><br><br>
+							  	
+					</p>
+				<h1><br><br>
+					With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email. These values set what email address and name commits will be from on a local computer. With git config, a --global flag is used to write the settings to all repositories on a computer. Without a --global flag settings will only apply to the current repository that you are currently in.
+				</h1>
+					<p class="prompt"> 	$ git config <!setting> <!command>
+							<br><br><br>
+							  	
+					</p>
+				<h1><br><br>
+					To determine what branch the local repository is on, add a new branch, or delete a branch.
+				</h1>
+					<p class="prompt"> 	# Create a new branch
+									<br>$ git branch <!branch_name><br>
+
+									<br># List all remote or local branches
+									<br>$ git branch -a<br>
+
+									<br># Delete a branch
+									<br>$ git branch -d <!branch_name>
+							<br>
+							  	
+					</p>
+				<h1><br><br>
+					To start working in a different branch, use git checkout to switch branches.
+				</h1>
+					<p class="prompt"> 	# Checkout an existing branch
+									<br>$ git checkout <!branch_name><br>
+
+									<br># Checkout and create a new branch with that name
+									<br>$ git checkout -b <!new_branch>
+							<br>
+							  	
+					</p>
+				<h1><br><br>
+					Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.
+				</h1>
+					<p class="prompt">  # Merge changes into current branch
+									<br>$ git merge <!branch_name><br><br>						
+							  	
+					</p>
+			</div>
 		</div>
 	</div>
 </body>

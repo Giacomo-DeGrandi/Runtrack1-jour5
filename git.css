@@ -1,41 +1,54 @@
-body { background-color: darkslategrey; 
+body { background-color:  #362d3c ; 
 
 }
 
-.title { background-color: darkslategrey;
+.title { background-color:  #362d3c ;
 			font-family: verdana, sans-serif;
 			font-size: 100%;
 			color: whitesmoke;
-			display: flex;			
+			display: flex;
+			padding: 1%;			
 }
 
 .maincont {
 			display: flex;	
-			height: 5%;		
+			height: 90%;		
 }
 
 
-.left { justify: flex-start;
+.left { display: flex;
+		flex-direction:  column;
+		justify-content: space-between;
 		font-family: verdana, sans-serif;
 		font-size: 50%;
 		color: darkorange;
 		padding: 5%;
 		flex: 1;
+		height: 230%;
+		margin-top: 0;
+
 }
 
 #h1 {
-		font-size: 350%;
-
+		font-size: 100%;
 }
 
-.right { font-family: verdana, sans-serif;
+
+.right {
+		display: flex;
+		flex-direction:  column;
+		justify-content: space-between ;
+		font-family: verdana, sans-serif;
 		font-size: 50%;
 		color: lightgray;
-		flex: 5;
+		flex: 7;
 		padding: 5%;
+		height: 130%;
 }
 
-#prompt { 	background-color: black;
+.prompt { 	background-color: black;
 			color: whitesmoke;
 			font-family: 'Courier New', monospace;
+			width: 60%;
+			font-size: 12px;
 }
