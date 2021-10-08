@@ -1,0 +1,31 @@
+body { background-color: darkslategrey; 
+
+}
+
+.title { background-color: darkslategrey;
+			font-family: verdana, sans-serif;
+			font-size: 100%;
+			color: whitesmoke;
+			display: flex;			
+}
+
+.maincont {
+			display: flex;	
+			height: 5%;		
+}
+
+
+.left { justify: flex-start;
+		font-family: verdana, sans-serif;
+		font-size: 50%;
+		color: darkorange;
+		padding: 5%;
+		flex: 1;
+}
+
+.right { font-family: verdana, sans-serif;
+		font-size: 50%;
+		color: lightgray;
+		flex: 5;
+		padding: 5%;
+}
