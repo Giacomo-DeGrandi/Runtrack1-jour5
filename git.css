@@ -23,9 +23,19 @@ body { background-color: darkslategrey;
 		flex: 1;
 }
 
+#h1 {
+		font-size: 350%;
+
+}
+
 .right { font-family: verdana, sans-serif;
 		font-size: 50%;
 		color: lightgray;
 		flex: 5;
 		padding: 5%;
+}
+
+#prompt { 	background-color: black;
+			color: whitesmoke;
+			font-family: 'Courier New', monospace;
 }
